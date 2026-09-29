@@ -1,0 +1,15 @@
+{
+  "name": "turnos",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w @turnos/domain && npm run test -w @turnos/api",
+    "dev:api": "npm run dev -w @turnos/api",
+    "start:api": "npm run start -w @turnos/api",
+    "start:mobile": "npm run start -w @turnos/mobile"
+  }
+}
